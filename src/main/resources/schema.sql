@@ -1,0 +1,8 @@
+CREATE ROLE read_user WITH LOGIN PASSWORD 'pass' VALID UNTIL '2025-12-31';
+CREATE USER write_user WITH PASSWORD 'pass' VALID UNTIL '2025-12-31';
+CREATE SEQUENCE global_seq START WITH 100000;
+CREATE TABLE addresses
+(
+    id        INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),
+    city      VARCHAR NOT NULL
+);
