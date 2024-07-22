@@ -1,11 +1,9 @@
-package org.dwh;
-
-import org.dwh.wokrer.RunAfterStartup;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.event.EventListener;
+
 
 @SpringBootApplication
 public class Main {
@@ -19,6 +17,5 @@ public class Main {
         log.error("Main is an error message");
         log.trace("Main is an trace message");
     }
-
-
 }
+ 

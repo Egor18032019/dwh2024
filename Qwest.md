@@ -19,7 +19,7 @@ docker run --name dwh -p 5555:5432 -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=
 2. Вариант [docker-compose c инит файлом]
     * Пользователей создаем в init.sql
 
-3. Вариант [спринг через инит файлы shema.sql и data.sql]
+3. Вариант [спринг через инит файлы shema.sql и data.sql] ветка - spring
  
 
 * настройку сетевого доступа для обращения к БД при помощи современных UI-
