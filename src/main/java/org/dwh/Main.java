@@ -1,4 +1,6 @@
+ 
 package org.dwh;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,3 +22,4 @@ public class Main {
         log.trace("Main is an trace message");
     }
 }
+ 
