@@ -1,8 +1,8 @@
 package org.dwh.load;
 
-import io.swagger.v3.oas.annotations.servers.Server;
-import lombok.RequiredArgsConstructor;
-import org.dwh.store.EntityExampleRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,8 +11,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 
-
+@Service
 public class LoaderService {
+    static final Logger log = LoggerFactory.getLogger(LoaderService.class);
 
 
     public static void loadFile(URL url, String fileName, String path) {
@@ -20,7 +21,9 @@ public class LoaderService {
 
         try (InputStream in = url.openStream()) {
             Files.copy(in, outputPath, StandardCopyOption.REPLACE_EXISTING);
+            log.info("Скачали файл с адреса:" + url);
         } catch (IOException e) {
+            log.error("Ошибка при скачивание файла с адреса:" + url);
             throw new RuntimeException(e);
         }
     }

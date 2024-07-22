@@ -25,3 +25,9 @@ docker run --name dwh -p 5555:5432 -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=
 * настройку сетевого доступа для обращения к БД при помощи современных UI-
   инструментов (например, DBeaver или аналогичных сред) - **как это ?**
 - _Скачал DBeaver и через него подключился к БД. Выполнено ?_
+
+```shell
+curl -O https://cloclo58.cloud.mail.ru/public/M87gXAw89WHWyoBB8H5/g/no/L1xB/nvgHGYJz5
+```
+
+ 
