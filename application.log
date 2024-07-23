@@ -3622,3 +3622,6 @@ org.postgresql.util.PSQLException: Соединение уже было закр
 2024-07-23 14:17:38 INFO  ReaderService:38 - Сохранение в БД
 2024-07-23 14:17:38 INFO  ReaderService:38 - Сохранение в БД
 2024-07-23 14:17:38 INFO  ReaderService:38 - Сохранение в БД
+2024-07-23 14:22:28 INFO  LocalContainerEntityManagerFactoryBean:650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-23 14:22:28 INFO  HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+2024-07-23 14:22:28 INFO  HikariDataSource:351 - HikariPool-1 - Shutdown completed.
