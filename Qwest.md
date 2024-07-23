@@ -27,3 +27,9 @@ curl -i -X GET https://itsm365.com/documents_rus/web/Content/Resources/doc/impor
 * настройку сетевого доступа для обращения к БД при помощи современных UI-
   инструментов (например, DBeaver или аналогичных сред) - **как это ?**
 - _Скачал DBeaver и через него подключился к БД. Выполнено ?_
+
+```shell
+curl -O https://cloclo62.datacloudmail.ru/public/get/c4DtW24Hc7mMUQUUQjYHownVv41kDZNvDgQ6StAsXXznd57e9ueLYzwjrH2RFTg5DE6JZ8S8LnxUfKJXkEVqMUpK6kaLzw7LCA6PpgeUgLfUQz7d8CDWNxzwZyAG1Bdi1LNu6VSgsi5JTXb2ooP9X4jktjD5rFi8ivbqHxumMPdAQPvgJd5DwBFb8R9TsfgT8rRAvCv6sVMiJAj4T8H4iYBfM1eLS3uoc41CcU6iTNEQsYvDEq1s1MJYQycUc149tznzstMMzRWEMRatRz9yikGdGrJFd3VyzwwjHXdyjsQyiGcty4xJJBBmQA7AiLxFKJT7riRwzxTn9uACWCQABVjNnKi3wSXgty5UVPZ5LuXyNX989mHabP4TK98FNwNrpLttZSJyAb5o1Bx/no/IMOEX_230101_240601.csv
+```
+
+ 
