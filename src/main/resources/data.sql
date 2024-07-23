@@ -1,5 +1,2 @@
-INSERT INTO example (
-ticker,per,date,time,open,high,low,close,vol,id
-) values (
-'first', 'data sql', 1, 2, 3.52, 4.01, 5.19, 6.19, 7,0
-);
+INSERT INTO example (active,age,alco,ap_hi,ap_lo,cardio,cholesterol,gender,gluc,height,smoke,weight,id)
+ values (1, 1, 1, 1, 1.0, 1, 1, 1, 1, 1,1, 1, 10000011);

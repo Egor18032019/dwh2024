@@ -15,26 +15,31 @@ import org.dwh.store.entity.AbstractBaseEntity;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EntityExample extends AbstractBaseEntity {
-    private String TICKER;
-    private String PER;
-    private Integer DATE;
-    private Integer TIME;
-    private Double OPEN;
-    private Double HIGH;
-    private Double LOW;
-    private Double CLOSE;
-    private Long VOL;
+    private Integer AGE;
+    private Integer GENDER;
+    private Integer HEIGHT;
+    private Double WEIGHT;
+    private Integer AP_HI;
+    private Integer AP_LO;
+    private Integer CHOLESTEROL;
+    private Integer GLUC;
+    private Integer SMOKE;
+    private Integer ALCO;
+    private Integer ACTIVE;
+    private Integer CARDIO;
 
     public EntityExample(String[] row) {
-        this.TICKER = row[0];
-        this.PER = row[1];
-        this.DATE = Integer.parseInt(row[2]);
-        this.TIME = Integer.parseInt(row[3]);
-        this.OPEN = Double.parseDouble(row[4]);
-        this.HIGH = Double.parseDouble(row[5]);
-        this.LOW = Double.parseDouble(row[6]);
-        this.CLOSE = Double.parseDouble(row[7]);
-        this.VOL = Long.parseLong(row[8]);
+        this.id = Long.valueOf(row[0]);
+        this.AGE = Integer.valueOf(row[1]);
+        this.GENDER = Integer.valueOf(row[2]);
+        this.HEIGHT = Integer.parseInt(row[3]);
+        this.WEIGHT = Double.parseDouble(row[4]);
+        this.AP_HI = Integer.parseInt(row[5]);
+        this.AP_LO = Integer.parseInt(row[6]);
+        this.CHOLESTEROL = Integer.parseInt(row[7]);
+        this.GLUC = Integer.parseInt(row[8]);
+        this.SMOKE = Integer.parseInt(row[9]);
+        this.ALCO = Integer.parseInt(row[10]);
     }
 }
 

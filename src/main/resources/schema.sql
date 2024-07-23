@@ -10,4 +10,4 @@ ALTER USER write_user WITH PASSWORD 'pass' VALID UNTIL '2025-12-31';
 DROP SEQUENCE IF EXISTS global_seq CASCADE;
 CREATE SEQUENCE global_seq START WITH 100000;
 DROP TABLE IF EXISTS example;
-CREATE table example (close float(53), date integer, high float(53), low float(53), open float(53), time integer, id bigint not null, vol bigint, per varchar(255), ticker varchar(255), primary key (id));
+CREATE TABLE example (active integer, alco integer, ap_hi integer, ap_lo integer, cardio integer, cholesterol integer, gluc integer, height integer, smoke integer, weight float(53), id bigint not null, age integer, gender integer, primary key (id))
