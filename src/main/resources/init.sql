@@ -1,10 +1,10 @@
 
 SELECT 'CREATE ROLE read_user'
-WHERE NOT EXISTS (SELECT FROM pg_catalog.pg_roles WHERE rolname = 'read_user');
+WHERE NOT EXISTS (SELECT FROM pg_catalog.pg_roles WHERE rolname = 'read_user')
 ALTER USER read_user WITH PASSWORD 'pass';
 
 SELECT 'CREATE ROLE write_user'
-WHERE NOT EXISTS (SELECT FROM pg_catalog.pg_roles WHERE rolname = 'read_user');
+WHERE NOT EXISTS (SELECT FROM pg_catalog.pg_roles WHERE rolname = 'read_user')
 ALTER USER write_user WITH PASSWORD 'pass' VALID UNTIL '2025-12-31';
 
 DROP SEQUENCE IF EXISTS global_seq CASCADE;
